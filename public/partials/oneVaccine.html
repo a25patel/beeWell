@@ -1,0 +1,9 @@
+<h2>{{oneVaccine.name}}</h2>
+<div class="well">
+  <h5>What Is It?</h5>{{oneVaccine.what}}
+  <h5>Transmitted By:</h5>
+    <div ng-repeat='transmission in oneVaccine.transmission'>
+      {{transmission}}
+    </div>
+  <h5>Minimum Age:</h5>{{oneVaccine.age/12}} Years
+</div>

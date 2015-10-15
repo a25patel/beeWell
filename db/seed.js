@@ -1,4 +1,4 @@
-var vaccineDB = require('monk')('localhost/vaccines');
+var vaccineDB = require('monk')('localhost/vaccines-info');
 var Vaccines = vaccineDB.get('vaccines');
 
 Vaccines.remove({})

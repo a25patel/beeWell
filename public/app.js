@@ -8,4 +8,9 @@ app.config(function($stateProvider, $urlRouterProvider){
       templateUrl: 'partials/vaccines.html',
       controller: 'vaccineController'
     })
+    .state('showVaccine', {
+      url: '/:id',
+      templateUrl: 'partials/oneVaccine.html',
+      controller: 'oneVaccineController'
+    })
 });
